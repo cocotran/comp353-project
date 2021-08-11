@@ -1,0 +1,14 @@
+.navbar {
+    width: 100%;
+    position:fixed;
+    margin-left: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.navbar-ul > * {
+    padding-left: 2rem;
+    list-style-type: none;
+}

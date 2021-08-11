@@ -1,5 +1,5 @@
 CREATE TABLE Person (
-  personID INT NOT NULL,
+  personID INT NOT NULL AUTO_INCREMENT,
   firstName CHAR(30),
   lastName CHAR(30), 
   dob INT,

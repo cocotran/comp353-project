@@ -20,17 +20,17 @@
 <br> <br> <br>
 
 <?php
-// $servername = "";
-// $username = "";
-// $password = "";
-// $dbname = "";
+$servername = "lkc353.encs.concordia.ca";
+$username = "lkc353_1";
+$password = "Lead20  ";
+$dbname = "lkc353_1";
 
-// // Create connection
-// $conn = new mysqli($servername, $username, $password, $dbname);
-// // Check connection
-// if ($conn->connect_error) {
-//   die("Connection failed: " . $conn->connect_error);
-// }
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
 
 $firstName = "firstName = ".$_POST["firstname"];
 $lastname = "lastname = ".$_POST["lastname"];
@@ -51,13 +51,13 @@ $sql = "UPDATE Person ".
 $value.
 "WHERE PersonID = ".$_POST["personID"];
 echo $sql;
-// if ($conn->query($sql) === TRUE) {
-//   echo "New record created successfully";
-// } else {
-//   echo "Error: " . $sql . "<br>" . $conn->error;
-// }
+if ($conn->query($sql) === TRUE) {
+  echo "New record created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 
-// $conn->close();
+$conn->close();
 
 ?>
 

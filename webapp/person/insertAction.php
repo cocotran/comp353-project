@@ -20,10 +20,10 @@
 <br> <br> <br>
 
 <?php
-$servername = "";
-$username = "";
-$password = "";
-$dbname = "";
+$servername = "lkc353.encs.concordia.ca";
+$username = "lkc353_1";
+$password = "Lead20  ";
+$dbname = "lkc353_1";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
